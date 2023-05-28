@@ -2,6 +2,8 @@
 @import "headerMoney.scss";
 @import "interestBox.scss";
 @import "flow-1.scss";
+@import "flow-3.scss";
+@import "_carbox-yellow.scss";
 $maincolor: rgba(35, 38, 54, 1);
 $textcolor: #fff;
 $lighttext: rgb(102, 99, 99);
@@ -39,6 +41,7 @@ body {
         }
     }
     .flow-3 {
+        @extend .flow-3;
         header {
             @extend .headerLogo-button;
         }

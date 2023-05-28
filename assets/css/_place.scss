@@ -1,0 +1,24 @@
+.place {
+    width: 80%;
+    margin-inline: auto;
+    padding-top: 15px;
+    .place-text {
+        h3 {
+            color: $textcolor;
+            margin: 0;
+            font-size: 24px;
+        }
+        .icon-p {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            i {
+                color: $yellow;
+            }
+            p {
+                color: $textcolor;
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import "_button-next.scss";
+@import "_place.scss";
+@import "_text-p.scss";
+.flow-3 {
+    .parking-main {
+        width: 80%;
+        margin-inline: auto;
+        height: 84vh;
+        .place {
+            @extend .place;
+        }
+        .car-box-yellow {
+            margin-top: 30px;
+            @extend.car-box-yellow;
+        }
+        .choose-day {
+            margin: 30px 0;
+            .text-p {
+                @extend .text-p;
+            }
+            .day-container {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                align-items: center;
+                .day-box {
+                    border-radius: 15px;
+                    text-align: center;
+                    padding: 3px 0;
+                    p {
+                        margin: 0;
+                        font-size: 22px;
+                        font-weight: bolder;
+                        color: $textcolor;
+                    }
+                    span {
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: $textcolor;
+                    }
+                    &:hover {
+                        background: $yellow;
+                        color: black;
+                        p {
+                            color: black;
+                        }
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+                .active {
+                    background: $yellow;
+                    color: black;
+                    p {
+                        color: black;
+                    }
+                    span {
+                        color: black;
+                    }
+                }
+            }
+            .day-day {
+                margin: 30px 0 150px 0;
+                .start-day {
+                    .text-yellow-p {
+                        @extend .text-yellow-p;
+                    }
+                    .text-p {
+                        @extend .text-p;
+                    }
+                }
+                .end-day {
+                    padding-top: 20px;
+                    .text-yellow-p {
+                        @extend .text-yellow-p;
+                    }
+                    .text-p {
+                        @extend .text-p;
+                    }
+                }
+            }
+        }
+        .button-next {
+            @extend .button-next;
+        }
+    }
+}
