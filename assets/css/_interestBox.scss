@@ -1,0 +1,54 @@
+$maincolor: rgba(35, 38, 54, 1);
+$textcolor: #fff;
+$wbkg: #fff;
+.interest-box {
+    width: 80%;
+    margin-inline: auto;
+    position: absolute;
+    bottom: 8vh;
+    left: 10%;
+    .interest-text-p {
+        font-size: 17px;
+        font-weight: bold;
+        color: $textcolor;
+        padding-bottom: 10px;
+        p {
+            margin: 0 !important;
+        }
+    }
+    .white-box {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        gap: 8px;
+        .rent {
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            position: relative;
+            p {
+                position: absolute;
+                bottom: 2px;
+                left: 15px;
+                color: $maincolor;
+                font-weight: bolder;
+                color: $maincolor;
+            }
+        }
+        .ai {
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            position: relative;
+            p {
+                position: absolute;
+                bottom: 2px;
+                left: 15px;
+                font-weight: bolder;
+                color: $maincolor;
+            }
+        }
+    }
+}

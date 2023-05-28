@@ -1,5 +1,12 @@
 @import "footer.scss";
 @import "headerMoney.scss";
+@import "interestBox.scss";
+@import "flow-1.scss";
+$maincolor: rgba(35, 38, 54, 1);
+$textcolor: #fff;
+$lighttext: rgb(102, 99, 99);
+$wbkg: #fff;
+$yellow: yellow;
 
 /****************  ^.^ ***********************/
 
@@ -19,10 +26,13 @@ body {
     .parking-body {
         width: 400px;
         height: 100vh;
-        background-color: rgba(35, 38, 54, 1);
+        background-color: $maincolor;
         margin: 0.5rem;
         margin: auto;
         position: relative;
+    }
+    .flow-1 {
+        @extend .flow-1;
     }
     .flow-2 {
         header {

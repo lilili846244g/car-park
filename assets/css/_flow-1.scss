@@ -1,0 +1,164 @@
+$maincolor: rgba(35, 38, 54, 1);
+$textcolor: #fff;
+$lighttext: rgb(102, 99, 99);
+$wbkg: #fff;
+$yellow: #fac80b;
+.flow-1 {
+    .big-logo {
+        width: 60%;
+        margin-inline: auto;
+        img {
+            width: 100%;
+        }
+    }
+    .choose-rent-part {
+        width: 80%;
+        margin-inline: auto;
+        .choose-title {
+            width: 100%;
+            text-align: center;
+            p {
+                font-size: 18px;
+                font-weight: bold;
+                color: $textcolor;
+            }
+        }
+        div {
+            margin-top: 10px;
+            select {
+                width: 100%;
+                background-color: $wbkg;
+                padding: 1rem;
+                border-radius: 15px;
+                font-size: 16px;
+                font-weight: bold;
+                color: $lighttext;
+                option {
+                    width: 100%;
+                    background-color: $wbkg;
+                    padding: 1rem;
+                    border-radius: 15px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $lighttext;
+                }
+            }
+        }
+    }
+    .quota {
+        width: 80%;
+        margin-inline: auto;
+        .text-p {
+            width: 100%;
+            text-align: center;
+            p {
+                font-size: 18px;
+                font-weight: bold;
+                color: $textcolor;
+            }
+        }
+        .quota-box {
+            width: 100%;
+            margin-inline: auto;
+            .car-box-yellow {
+                display: grid;
+                grid-template-columns: 1.5fr 0.6fr 0.3fr;
+                align-items: center;
+                background: $yellow;
+                border-radius: 15px;
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    padding: 0.5rem 1rem;
+                    .left-top {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        img {
+                            width: 50px;
+                        }
+                        p {
+                            color: $maincolor;
+                            font-size: 14px;
+                            font-weight: bolder;
+                        }
+                    }
+                    .left-down {
+                        padding: 0.2rem;
+                        p {
+                            font-size: 30px;
+                            font-weight: bold;
+                            margin: 0;
+                            span {
+                                font-size: 12px;
+                                font-weight: bold;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-between;
+                    gap: 15px;
+                    .right-top {
+                        p {
+                            font-size: 13px;
+                            margin: 0;
+                            padding-top: 12px;
+                        }
+                    }
+                    .right-down {
+                        display: flex;
+                        align-items: baseline;
+                        p {
+                            font-size: 60px;
+                            margin: 0;
+                            font-weight: bolder;
+                            color: blue;
+                        }
+                        span {
+                            padding-left: 4px;
+                            font-weight: blod;
+                        }
+                    }
+                }
+            }
+            .mtsc-box {
+                margin-top: 15px;
+                .car-box-red {
+                    @extend.car-box-yellow;
+                    background-color: #842828;
+                }
+                .left {
+                    .left-top {
+                        p {
+                            color: $textcolor !important;
+                        }
+                    }
+                    .left-down {
+                        p {
+                            color: $textcolor;
+                        }
+                    }
+                }
+                .right {
+                    p {
+                        color: $textcolor;
+                        padding: 0 0.3rem;
+                        font-weight: bold;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .interest-box {
+        @extend .interest-box;
+    }
+}

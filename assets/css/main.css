@@ -76,6 +76,201 @@ footer p, .footer p {
   color: aliceblue;
 }
 
+.interest-box, .flow-1 .interest-box {
+  width: 80%;
+  margin-inline: auto;
+  position: absolute;
+  bottom: 8vh;
+  left: 10%;
+}
+.interest-box .interest-text-p, .flow-1 .interest-box .interest-text-p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.interest-box .interest-text-p p, .flow-1 .interest-box .interest-text-p p {
+  margin: 0 !important;
+}
+.interest-box .white-box, .flow-1 .interest-box .white-box {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  gap: 8px;
+}
+.interest-box .white-box .rent, .flow-1 .interest-box .white-box .rent {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  position: relative;
+}
+.interest-box .white-box .rent p, .flow-1 .interest-box .white-box .rent p {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  color: rgb(35, 38, 54);
+  font-weight: bolder;
+  color: rgb(35, 38, 54);
+}
+.interest-box .white-box .ai, .flow-1 .interest-box .white-box .ai {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  position: relative;
+}
+.interest-box .white-box .ai p, .flow-1 .interest-box .white-box .ai p {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  font-weight: bolder;
+  color: rgb(35, 38, 54);
+}
+
+.flow-1 .big-logo {
+  width: 60%;
+  margin-inline: auto;
+}
+.flow-1 .big-logo img {
+  width: 100%;
+}
+.flow-1 .choose-rent-part {
+  width: 80%;
+  margin-inline: auto;
+}
+.flow-1 .choose-rent-part .choose-title {
+  width: 100%;
+  text-align: center;
+}
+.flow-1 .choose-rent-part .choose-title p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.flow-1 .choose-rent-part div {
+  margin-top: 10px;
+}
+.flow-1 .choose-rent-part div select {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(102, 99, 99);
+}
+.flow-1 .choose-rent-part div select option {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(102, 99, 99);
+}
+.flow-1 .quota, .container .flow-1 .quota {
+  width: 80%;
+  margin-inline: auto;
+}
+.flow-1 .quota .text-p, .container .flow-1 .quota .text-p {
+  width: 100%;
+  text-align: center;
+}
+.flow-1 .quota .text-p p, .container .flow-1 .quota .text-p p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.flow-1 .quota .quota-box, .container .flow-1 .quota .quota-box {
+  width: 100%;
+  margin-inline: auto;
+}
+.flow-1 .quota .quota-box .car-box-yellow, .container .flow-1 .quota .quota-box .car-box-yellow, .flow-1 .quota .quota-box .mtsc-box .car-box-red {
+  display: grid;
+  grid-template-columns: 1.5fr 0.6fr 0.3fr;
+  align-items: center;
+  background: #fac80b;
+  border-radius: 15px;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0.5rem 1rem;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left .left-top, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left .left-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left .left-top img, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left .left-top img {
+  width: 50px;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left .left-top p, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left .left-top p {
+  color: rgb(35, 38, 54);
+  font-size: 14px;
+  font-weight: bolder;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left .left-down, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left .left-down {
+  padding: 0.2rem;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left .left-down p, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left .left-down p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.flow-1 .quota .quota-box .car-box-yellow .left .left-down p span, .flow-1 .quota .quota-box .mtsc-box .car-box-red .left .left-down p span {
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.flow-1 .quota .quota-box .car-box-yellow .right, .flow-1 .quota .quota-box .mtsc-box .car-box-red .right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 15px;
+}
+.flow-1 .quota .quota-box .car-box-yellow .right .right-top p, .flow-1 .quota .quota-box .mtsc-box .car-box-red .right .right-top p {
+  font-size: 13px;
+  margin: 0;
+  padding-top: 12px;
+}
+.flow-1 .quota .quota-box .car-box-yellow .right .right-down, .flow-1 .quota .quota-box .mtsc-box .car-box-red .right .right-down {
+  display: flex;
+  align-items: baseline;
+}
+.flow-1 .quota .quota-box .car-box-yellow .right .right-down p, .flow-1 .quota .quota-box .mtsc-box .car-box-red .right .right-down p {
+  font-size: 60px;
+  margin: 0;
+  font-weight: bolder;
+  color: blue;
+}
+.flow-1 .quota .quota-box .car-box-yellow .right .right-down span, .flow-1 .quota .quota-box .mtsc-box .car-box-red .right .right-down span {
+  padding-left: 4px;
+  font-weight: blod;
+}
+.flow-1 .quota .quota-box .mtsc-box, .container .flow-1 .quota .quota-box .mtsc-box {
+  margin-top: 15px;
+}
+.flow-1 .quota .quota-box .mtsc-box .car-box-red {
+  background-color: #842828;
+}
+.flow-1 .quota .quota-box .mtsc-box .left .left-top p {
+  color: #fff !important;
+}
+.flow-1 .quota .quota-box .mtsc-box .left .left-down p {
+  color: #fff;
+}
+.flow-1 .quota .quota-box .mtsc-box .right p {
+  color: #fff;
+  padding: 0 0.3rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
 /****************  ^.^ ***********************/
 body {
   margin: 0;
