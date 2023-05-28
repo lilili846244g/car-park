@@ -1,10 +1,12 @@
+@use "_color.scss" as c;
 .place {
     width: 80%;
     margin-inline: auto;
     padding-top: 15px;
+    margin: 0;
     .place-text {
         h3 {
-            color: $textcolor;
+            color: c.$textcolor;
             margin: 0;
             font-size: 24px;
         }
@@ -13,10 +15,10 @@
             align-items: center;
             gap: 8px;
             i {
-                color: $yellow;
+                color: c.$yellow;
             }
             p {
-                color: $textcolor;
+                color: c.$textcolor;
                 font-size: 13px;
             }
         }

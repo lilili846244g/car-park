@@ -3,12 +3,9 @@
 @import "interestBox.scss";
 @import "flow-1.scss";
 @import "flow-3.scss";
-@import "_carbox-yellow.scss";
-$maincolor: rgba(35, 38, 54, 1);
-$textcolor: #fff;
-$lighttext: rgb(102, 99, 99);
-$wbkg: #fff;
-$yellow: yellow;
+@import "flow-4.scss";
+@import "carbox-yellow.scss";
+@use "color.scss" as c;
 
 /****************  ^.^ ***********************/
 
@@ -28,7 +25,7 @@ body {
     .parking-body {
         width: 400px;
         height: 100vh;
-        background-color: $maincolor;
+        background-color: c.$maincolor;
         margin: auto;
         position: relative;
     }
@@ -45,6 +42,9 @@ body {
         header {
             @extend .headerLogo-button;
         }
+    }
+    .flow-4 {
+        @extend .flow-4;
     }
 }
 

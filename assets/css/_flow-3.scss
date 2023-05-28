@@ -1,6 +1,4 @@
-@import "_button-next.scss";
-@import "_place.scss";
-@import "_text-p.scss";
+@use "color.scss" as c;
 .flow-3 {
     .parking-main {
         width: 80%;
@@ -28,18 +26,18 @@
                     text-align: center;
                     padding: 3px 0;
                     p {
-                        margin: 0;
+                        margin: 0 !important;
                         font-size: 22px;
                         font-weight: bolder;
-                        color: $textcolor;
+                        color: c.$textcolor;
                     }
                     span {
                         font-size: 12px;
                         font-weight: 600;
-                        color: $textcolor;
+                        color: c.$textcolor;
                     }
                     &:hover {
-                        background: $yellow;
+                        background: c.$yellow;
                         color: black;
                         p {
                             color: black;
@@ -50,7 +48,7 @@
                     }
                 }
                 .active {
-                    background: $yellow;
+                    background: c.$yellow;
                     color: black;
                     p {
                         color: black;
@@ -61,7 +59,7 @@
                 }
             }
             .day-day {
-                margin: 30px 0 150px 0;
+                margin: 30px 0;
                 .start-day {
                     .text-yellow-p {
                         @extend .text-yellow-p;

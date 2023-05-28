@@ -1,6 +1,4 @@
-$maincolor: rgba(35, 38, 54, 1);
-$textcolor: #fff;
-$wbkg: #fff;
+@use "color.scss" as c;
 .interest-box {
     width: 80%;
     margin-inline: auto;
@@ -8,7 +6,7 @@ $wbkg: #fff;
     .interest-text-p {
         font-size: 17px;
         font-weight: bold;
-        color: $textcolor;
+        color: c.$textcolor;
         padding-bottom: 10px;
         p {
             margin: 0 !important;
@@ -29,9 +27,9 @@ $wbkg: #fff;
                 position: absolute;
                 bottom: 2px;
                 left: 15px;
-                color: $maincolor;
+                color: c.$maincolor;
                 font-weight: bolder;
-                color: $maincolor;
+                color: c.$maincolor;
             }
         }
         .ai {
@@ -45,7 +43,7 @@ $wbkg: #fff;
                 bottom: 2px;
                 left: 15px;
                 font-weight: bolder;
-                color: $maincolor;
+                color: c.$maincolor;
             }
         }
     }

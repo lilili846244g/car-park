@@ -1,8 +1,9 @@
+@use "color.scss" as c;
 .car-box-yellow {
     display: grid;
     grid-template-columns: 1.5fr 0.6fr 0.3fr;
     align-items: center;
-    background: $yellow;
+    background: c.$yellow;
     border-radius: 15px;
     .left {
         display: flex;
@@ -19,7 +20,7 @@
                 width: 50px;
             }
             p {
-                color: $maincolor;
+                color: c.$maincolor;
                 font-size: 14px;
                 font-weight: bolder;
             }

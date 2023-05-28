@@ -1,8 +1,12 @@
+@use "color.scss" as c;
 .button-next {
-    width: 100%;
-    background-color: $yellow;
+    width: 80%;
+    background-color: c.$yellow;
     padding: 10px 0;
     border-radius: 25px;
+    position: absolute;
+    bottom: 7vh;
+    left: 5vw;
     a {
         text-decoration: none;
         font-size: 20px;

@@ -1,8 +1,8 @@
-$textcolor: #fff;
+@use "color.scss" as c;
 .text-p {
     font-size: 17px;
     font-weight: bold;
-    color: $textcolor;
+    color: c.$textcolor;
     padding-bottom: 10px;
     p {
         margin: 0 !important;
@@ -12,7 +12,7 @@ $textcolor: #fff;
 .text-yellow-p {
     font-size: 14px;
     font-weight: bold;
-    color: $yellow;
+    color: c.$yellow;
     padding-bottom: 2px;
     p {
         margin: 0 !important;

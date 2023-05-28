@@ -1,8 +1,4 @@
-$maincolor: rgba(35, 38, 54, 1);
-$textcolor: #fff;
-$lighttext: rgb(102, 99, 99);
-$wbkg: #fff;
-$yellow: #fac80b;
+@use "color.scss" as c;
 .flow-1 {
     .parking-main {
         width: 100%;
@@ -23,27 +19,27 @@ $yellow: #fac80b;
                 p {
                     font-size: 18px;
                     font-weight: bold;
-                    color: $textcolor;
+                    color: c.$textcolor;
                 }
             }
             div {
                 margin-top: 10px;
                 select {
                     width: 100%;
-                    background-color: $wbkg;
+                    background-color: c.$wbkg;
                     padding: 1rem;
                     border-radius: 15px;
                     font-size: 16px;
                     font-weight: bold;
-                    color: $lighttext;
+                    color: c.$lighttext;
                     option {
                         width: 100%;
-                        background-color: $wbkg;
+                        background-color: c.$wbkg;
                         padding: 1rem;
                         border-radius: 15px;
                         font-size: 16px;
                         font-weight: bold;
-                        color: $lighttext;
+                        color: c.$lighttext;
                     }
                 }
             }
@@ -57,7 +53,7 @@ $yellow: #fac80b;
                 p {
                     font-size: 18px;
                     font-weight: bold;
-                    color: $textcolor;
+                    color: c.$textcolor;
                 }
             }
             .quota-box {
@@ -75,18 +71,18 @@ $yellow: #fac80b;
                     .left {
                         .left-top {
                             p {
-                                color: $textcolor !important;
+                                color: c.$textcolor !important;
                             }
                         }
                         .left-down {
                             p {
-                                color: $textcolor;
+                                color: c.$textcolor;
                             }
                         }
                     }
                     .right {
                         p {
-                            color: $textcolor;
+                            color: c.$textcolor;
                             padding: 0 0.3rem;
                             font-weight: bold;
                             padding-bottom: 5px;
