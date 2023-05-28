@@ -1,0 +1,51 @@
+@import "footer.scss";
+@import "headerMoney.scss";
+
+/****************  ^.^ ***********************/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    .parking-body {
+        width: 400px;
+        height: 100vh;
+        background-color: rgba(35, 38, 54, 1);
+        margin: 0.5rem;
+        margin: auto;
+        position: relative;
+    }
+    .flow-2 {
+        header {
+            @extend .headerLogo;
+        }
+    }
+    .flow-3 {
+        header {
+            @extend .headerLogo-button;
+        }
+    }
+}
+
+
+/****************  header ***********************/
+
+header {
+    @extend .headerMoney;
+}
+
+
+/****************  footer ***********************/
+
+.footer {
+    @extend footer;
+}

@@ -1,0 +1,103 @@
+footer, .footer {
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p, .footer p {
+  font-size: 13px;
+  color: antiquewhite;
+  text-align: center;
+  padding: 9px 0;
+}
+
+.headerMoney, header {
+  width: 100%;
+  height: 10vh;
+}
+.headerMoney .money-part, header .money-part {
+  width: 125px;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1.3rem;
+}
+.headerMoney .money-part img, header .money-part img {
+  width: 52px;
+  height: 52px;
+}
+.headerMoney .money-part h5, header .money-part h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #fac80b;
+}
+
+.headerLogo, .container .flow-2 header {
+  width: 100%;
+  height: 10vh;
+}
+.headerLogo .Logo-part, .container .flow-2 header .Logo-part {
+  width: 125px;
+  float: left;
+  margin: 1rem 1.3rem;
+}
+.headerLogo .Logo-part img, .container .flow-2 header .Logo-part img {
+  width: 100%;
+}
+
+.headerLogo-button, .container .flow-3 header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo-button .Logo-part, .container .flow-3 header .Logo-part {
+  width: 125px;
+  float: left;
+  margin: 1rem 1.3rem;
+}
+.headerLogo-button .Logo-part img, .container .flow-3 header .Logo-part img {
+  width: 100%;
+}
+.headerLogo-button .btn-part, .container .flow-3 header .btn-part {
+  margin: 1rem 1.5rem;
+}
+.headerLogo-button .btn-part a, .container .flow-3 header .btn-part a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/****************  ^.^ ***********************/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+.container .parking-body {
+  width: 400px;
+  height: 100vh;
+  background-color: rgb(35, 38, 54);
+  margin: 0.5rem;
+  margin: auto;
+  position: relative;
+}
+/****************  header ***********************/
+/****************  footer ***********************//*# sourceMappingURL=main.css.map */

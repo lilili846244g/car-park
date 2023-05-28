@@ -1,0 +1,59 @@
+.headerMoney {
+    width: 100%;
+    height: 10vh;
+    .money-part {
+        width: 125px;
+        float: right;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem 1.3rem;
+        img {
+            width: 52px;
+            height: 52px;
+        }
+        h5 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            color: #fac80b;
+        }
+    }
+}
+
+.headerLogo {
+    width: 100%;
+    height: 10vh;
+    .Logo-part {
+        width: 125px;
+        float: left;
+        margin: 1rem 1.3rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.headerLogo-button {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Logo-part {
+        width: 125px;
+        float: left;
+        margin: 1rem 1.3rem;
+        img {
+            width: 100%;
+        }
+    }
+    .btn-part {
+        margin: 1rem 1.5rem;
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+    }
+}
