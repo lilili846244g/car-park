@@ -76,36 +76,34 @@ footer p, .footer p {
   color: aliceblue;
 }
 
-.interest-box, .flow-1 .interest-box {
+.interest-box {
   width: 80%;
   margin-inline: auto;
-  position: absolute;
-  bottom: 8vh;
-  left: 10%;
+  margin-top: 50px;
 }
-.interest-box .interest-text-p, .flow-1 .interest-box .interest-text-p {
+.interest-box .interest-text-p {
   font-size: 17px;
   font-weight: bold;
   color: #fff;
   padding-bottom: 10px;
 }
-.interest-box .interest-text-p p, .flow-1 .interest-box .interest-text-p p {
+.interest-box .interest-text-p p {
   margin: 0 !important;
 }
-.interest-box .white-box, .flow-1 .interest-box .white-box {
+.interest-box .white-box {
   width: 100%;
   height: 12vh;
   display: flex;
   gap: 8px;
 }
-.interest-box .white-box .rent, .flow-1 .interest-box .white-box .rent {
+.interest-box .white-box .rent {
   background-color: #fff;
   width: 100%;
   height: 100%;
   border-radius: 18px;
   position: relative;
 }
-.interest-box .white-box .rent p, .flow-1 .interest-box .white-box .rent p {
+.interest-box .white-box .rent p {
   position: absolute;
   bottom: 2px;
   left: 15px;
@@ -113,14 +111,14 @@ footer p, .footer p {
   font-weight: bolder;
   color: rgb(35, 38, 54);
 }
-.interest-box .white-box .ai, .flow-1 .interest-box .white-box .ai {
+.interest-box .white-box .ai {
   background-color: #fff;
   width: 100%;
   height: 100%;
   border-radius: 18px;
   position: relative;
 }
-.interest-box .white-box .ai p, .flow-1 .interest-box .white-box .ai p {
+.interest-box .white-box .ai p {
   position: absolute;
   bottom: 2px;
   left: 15px;
@@ -271,6 +269,56 @@ footer p, .footer p {
   font-weight: bold;
   padding-bottom: 5px;
 }
+.flow-1 .interest-box {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+.flow-1 .interest-box .interest-text-p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.flow-1 .interest-box .interest-text-p p {
+  margin: 0 !important;
+}
+.flow-1 .interest-box .white-box {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  gap: 8px;
+}
+.flow-1 .interest-box .white-box .rent {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  position: relative;
+}
+.flow-1 .interest-box .white-box .rent p {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  color: rgb(35, 38, 54);
+  font-weight: bolder;
+  color: rgb(35, 38, 54);
+}
+.flow-1 .interest-box .white-box .ai {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  position: relative;
+}
+.flow-1 .interest-box .white-box .ai p {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  font-weight: bolder;
+  color: rgb(35, 38, 54);
+}
+
 /****************  ^.^ ***********************/
 body {
   margin: 0;
@@ -292,7 +340,6 @@ body {
   background-color: rgb(35, 38, 54);
   margin: 0.5rem;
   margin: auto;
-  position: relative;
 }
 /****************  header ***********************/
 /****************  footer ***********************//*# sourceMappingURL=main.css.map */
