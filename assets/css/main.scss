@@ -1,11 +1,12 @@
-@import "footer.scss";
+@use "color.scss" as c;
 @import "headerMoney.scss";
+@import "footer.scss";
 @import "interestBox.scss";
 @import "flow-1.scss";
 @import "flow-3.scss";
 @import "flow-4.scss";
 @import "carbox-yellow.scss";
-@use "color.scss" as c;
+@import "button-next.scss";
 
 /****************  ^.^ ***********************/
 
@@ -45,6 +46,9 @@ body {
     }
     .flow-4 {
         @extend .flow-4;
+        header {
+            @extend .headerLogo-button;
+        }
     }
 }
 
