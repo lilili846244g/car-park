@@ -28,6 +28,7 @@ body {
         height: 100vh;
         background-color: $maincolor;
         margin: auto;
+        position: relative;
     }
     .flow-1 {
         @extend .flow-1;
