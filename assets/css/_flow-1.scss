@@ -6,6 +6,7 @@ $yellow: #fac80b;
 .flow-1 {
     .big-logo {
         width: 60%;
+        height: 11vh;
         margin-inline: auto;
         img {
             width: 100%;
@@ -13,6 +14,7 @@ $yellow: #fac80b;
     }
     .choose-rent-part {
         width: 80%;
+        height: 11vh;
         margin-inline: auto;
         .choose-title {
             width: 100%;
@@ -47,6 +49,7 @@ $yellow: #fac80b;
     }
     .quota {
         width: 80%;
+        height: 37vh;
         margin-inline: auto;
         .text-p {
             width: 100%;
@@ -160,8 +163,8 @@ $yellow: #fac80b;
     }
     .interest-box {
         width: 80%;
+        height: 25vh;
         margin-inline: auto;
-        margin-top: 50px;
         .interest-text-p {
             font-size: 17px;
             font-weight: bold;
