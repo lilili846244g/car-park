@@ -1,0 +1,98 @@
+@use "color.scss" as c;
+@import "_place.scss";
+@import "mixin.scss";
+@import "_calendar.scss";
+.flow-5 {
+  .parking-main {
+    width: 80%;
+    margin-inline: auto !important;
+    height: 84vh;
+    .place-calendar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      .place {
+        @extend .place;
+      }
+      .calendar {
+        @extend .calendar;
+      }
+    }
+    .confirm-detail {
+      width: 100%;
+      background-color: #37416e;
+      padding: 0.8rem;
+      margin: 15px 20px 0 -12px;
+      border-radius: 15px;
+      .form-top {
+        width: 90%;
+        padding: 0.5rem;
+        .form-detail {
+          @include form-detail;
+        }
+        .form-tell-mail {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .form-type-no {
+          @extend .form-tell-mail;
+        }
+      }
+      .form-dwon {
+        width: 90%;
+        padding: 0.5rem;
+        .rent-pay {
+          @include text-yellow-p;
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .rent-time {
+          display: grid;
+          grid-template-columns: 1fr 0.8fr 0.4fr;
+          align-items: center;
+          p {
+            @include text-p;
+            font-size: 14px;
+          }
+          span {
+            color: c.$yellow;
+            padding: 0rem 1.5rem 0.7rem 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  .form-sms {
+    padding: 0.5rem 0;
+    p {
+      font-size: 15px;
+      color: c.$textcolor;
+      span {
+        color: c.$yellow;
+      }
+    }
+  }
+  .form-agree {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 13%;
+    i {
+      font-size: 20px;
+      color: c.$textcolor;
+    }
+    p {
+      color: c.$textcolor;
+      a {
+        color: c.$yellow;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.button-next {
+  @include button-next;
+}

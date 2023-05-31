@@ -1,0 +1,82 @@
+@use "color.scss" as c;
+@import "_place.scss";
+@import "mixin.scss";
+@import "calendar.scss";
+.flow-2 {
+  .parking-main {
+    width: 80%;
+    margin-inline: auto !important;
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rented {
+      width: 100%;
+      text-align: center;
+      .rented-h1 {
+        h1 {
+          font-size: 40px;
+          color: c.$yellow;
+        }
+      }
+      .rented-calendar {
+        .icon {
+          margin-bottom: 10px;
+          position: relative;
+          i {
+            color: c.$yellow;
+            font-size: 50px;
+          }
+          span {
+            position: absolute;
+            top: 20px;
+            left: 155px;
+            color: #fac80b;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+        p {
+          color: c.$yellow;
+          font-size: 10px;
+          margin: 0;
+        }
+      }
+      .place {
+        width: 80%;
+        margin-inline: auto;
+        padding-top: 15px;
+        margin: 0 !important;
+        .place-text {
+          width: 100%;
+          margin-left: 32px;
+          h3 {
+            color: c.$textcolor;
+            margin: 0;
+            font-size: 24px;
+          }
+          .icon-p {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              color: c.$yellow;
+            }
+            p {
+              color: c.$textcolor;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .rented-more {
+        padding-top: 15vh;
+        a {
+          font-size: 12px;
+          color: c.$yellow;
+        }
+      }
+    }
+  }
+}

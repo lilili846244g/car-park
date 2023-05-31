@@ -32,5 +32,22 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
+    color: c.$maincolor;
+  }
+}
+
+@mixin form-detail {
+  padding-bottom: 8px;
+  h5 {
+    font-size: 16px;
+    color: #92a1d3;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  p {
+    font-size: 16px;
+    color: c.$textcolor;
+    padding-bottom: 0.5rem;
+    margin: 0;
   }
 }

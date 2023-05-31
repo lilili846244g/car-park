@@ -107,9 +107,9 @@ footer p, .footer p {
   position: absolute;
   bottom: 2px;
   left: 15px;
-  color: rgb(35, 38, 54);
+  color: #232636;
   font-weight: bolder;
-  color: rgb(35, 38, 54);
+  color: #232636;
 }
 .interest-box .white-box .ai {
   background-color: #fff;
@@ -123,7 +123,31 @@ footer p, .footer p {
   bottom: 2px;
   left: 15px;
   font-weight: bolder;
-  color: rgb(35, 38, 54);
+  color: #232636;
+}
+
+.place, .flow-5 .parking-main .place-calendar .place, .container .flow-4 .parking-main .place-calendar .place, .flow-4 .parking-main .place, .flow-3 .parking-main .place {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 15px;
+  margin: 0;
+}
+.place .place-text h3, .flow-5 .parking-main .place-calendar .place .place-text h3, .flow-4 .parking-main .place .place-text h3, .flow-3 .parking-main .place .place-text h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+}
+.place .place-text .icon-p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.place .place-text .icon-p i, .flow-5 .parking-main .place-calendar .place .place-text .icon-p i, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p i {
+  color: #fac80b;
+}
+.place .place-text .icon-p p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p p {
+  color: #ffffff;
+  font-size: 13px;
 }
 
 .flow-1 .parking-main, .container .flow-1 .parking-main {
@@ -209,26 +233,144 @@ footer p, .footer p {
   padding-bottom: 5px;
 }
 
-.place, .flow-4 .parking-main .place, .flow-3 .parking-main .place {
+.place, .flow-5 .parking-main .place-calendar .place, .container .flow-4 .parking-main .place-calendar .place, .flow-4 .parking-main .place, .flow-3 .parking-main .place {
   width: 80%;
   margin-inline: auto;
   padding-top: 15px;
   margin: 0;
 }
-.place .place-text h3, .flow-4 .parking-main .place .place-text h3, .flow-3 .parking-main .place .place-text h3 {
+.place .place-text h3, .flow-5 .parking-main .place-calendar .place .place-text h3, .flow-4 .parking-main .place .place-text h3, .flow-3 .parking-main .place .place-text h3 {
   color: #ffffff;
   margin: 0;
   font-size: 24px;
 }
-.place .place-text .icon-p {
+.place .place-text .icon-p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.place .place-text .icon-p i {
+.place .place-text .icon-p i, .flow-5 .parking-main .place-calendar .place .place-text .icon-p i, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p i {
   color: #fac80b;
 }
-.place .place-text .icon-p p {
+.place .place-text .icon-p p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p p {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.calendar .icon, .flow-5 .parking-main .place-calendar .calendar .icon, .container .flow-4 .parking-main .place-calendar .calendar .icon {
+  position: relative;
+}
+.calendar .icon i, .flow-5 .parking-main .place-calendar .calendar .icon i, .container .flow-4 .parking-main .place-calendar .calendar .icon i {
+  color: #fac80b;
+  font-size: 26px;
+}
+.calendar .icon span, .flow-5 .parking-main .place-calendar .calendar .icon span, .container .flow-4 .parking-main .place-calendar .calendar .icon span {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  color: #fac80b;
+  font-size: 9px;
+  font-weight: bold;
+}
+.calendar p, .flow-5 .parking-main .place-calendar .calendar p, .container .flow-4 .parking-main .place-calendar .calendar p {
+  color: #fac80b;
+  font-size: 10px;
+  margin: 0;
+}
+
+.flow-2 .parking-main {
+  width: 80%;
+  margin-inline: auto !important;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flow-2 .parking-main .rented {
+  width: 100%;
+  text-align: center;
+}
+.flow-2 .parking-main .rented .rented-h1 h1 {
+  font-size: 40px;
+  color: #fac80b;
+}
+.flow-2 .parking-main .rented .rented-calendar .icon {
+  margin-bottom: 10px;
+  position: relative;
+}
+.flow-2 .parking-main .rented .rented-calendar .icon i {
+  color: #fac80b;
+  font-size: 50px;
+}
+.flow-2 .parking-main .rented .rented-calendar .icon span {
+  position: absolute;
+  top: 20px;
+  left: 155px;
+  color: #fac80b;
+  font-size: 20px;
+  font-weight: bold;
+}
+.flow-2 .parking-main .rented .rented-calendar p {
+  color: #fac80b;
+  font-size: 10px;
+  margin: 0;
+}
+.flow-2 .parking-main .rented .place {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 15px;
+  margin: 0 !important;
+}
+.flow-2 .parking-main .rented .place .place-text {
+  width: 100%;
+  margin-left: 32px;
+}
+.flow-2 .parking-main .rented .place .place-text h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+}
+.flow-2 .parking-main .rented .place .place-text .icon-p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-2 .parking-main .rented .place .place-text .icon-p i {
+  color: #fac80b;
+}
+.flow-2 .parking-main .rented .place .place-text .icon-p p {
+  color: #ffffff;
+  font-size: 13px;
+}
+.flow-2 .parking-main .rented .rented-more {
+  padding-top: 15vh;
+}
+.flow-2 .parking-main .rented .rented-more a {
+  font-size: 12px;
+  color: #fac80b;
+}
+
+.place, .flow-5 .parking-main .place-calendar .place, .container .flow-4 .parking-main .place-calendar .place, .flow-4 .parking-main .place, .flow-3 .parking-main .place {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 15px;
+  margin: 0;
+}
+.place .place-text h3, .flow-5 .parking-main .place-calendar .place .place-text h3, .flow-4 .parking-main .place .place-text h3, .flow-3 .parking-main .place .place-text h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+}
+.place .place-text .icon-p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.place .place-text .icon-p i, .flow-5 .parking-main .place-calendar .place .place-text .icon-p i, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p i {
+  color: #fac80b;
+}
+.place .place-text .icon-p p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p p {
   color: #ffffff;
   font-size: 13px;
 }
@@ -353,28 +495,29 @@ footer p, .footer p {
   text-decoration: none;
   font-size: 20px;
   font-weight: bolder;
+  color: #232636;
 }
 
-.place, .flow-4 .parking-main .place, .flow-3 .parking-main .place {
+.place, .flow-5 .parking-main .place-calendar .place, .container .flow-4 .parking-main .place-calendar .place, .flow-4 .parking-main .place, .flow-3 .parking-main .place {
   width: 80%;
   margin-inline: auto;
   padding-top: 15px;
   margin: 0;
 }
-.place .place-text h3, .flow-4 .parking-main .place .place-text h3, .flow-3 .parking-main .place .place-text h3 {
+.place .place-text h3, .flow-5 .parking-main .place-calendar .place .place-text h3, .flow-4 .parking-main .place .place-text h3, .flow-3 .parking-main .place .place-text h3 {
   color: #ffffff;
   margin: 0;
   font-size: 24px;
 }
-.place .place-text .icon-p {
+.place .place-text .icon-p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.place .place-text .icon-p i {
+.place .place-text .icon-p i, .flow-5 .parking-main .place-calendar .place .place-text .icon-p i, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p i {
   color: #fac80b;
 }
-.place .place-text .icon-p p {
+.place .place-text .icon-p p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p p {
   color: #ffffff;
   font-size: 13px;
 }
@@ -464,6 +607,173 @@ footer p, .footer p {
   text-decoration: none;
   font-size: 20px;
   font-weight: bolder;
+  color: #232636;
+}
+
+.place, .flow-5 .parking-main .place-calendar .place, .container .flow-4 .parking-main .place-calendar .place, .flow-3 .parking-main .place, .flow-4 .parking-main .place {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 15px;
+  margin: 0;
+}
+.place .place-text h3, .flow-5 .parking-main .place-calendar .place .place-text h3, .flow-3 .parking-main .place .place-text h3, .flow-4 .parking-main .place .place-text h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+}
+.place .place-text .icon-p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.place .place-text .icon-p i, .flow-5 .parking-main .place-calendar .place .place-text .icon-p i, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p i {
+  color: #fac80b;
+}
+.place .place-text .icon-p p, .flow-5 .parking-main .place-calendar .place .place-text .icon-p p, .container .flow-4 .parking-main .place-calendar .place .place-text .icon-p p {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.calendar .icon, .flow-5 .parking-main .place-calendar .calendar .icon, .container .flow-4 .parking-main .place-calendar .calendar .icon {
+  position: relative;
+}
+.calendar .icon i, .flow-5 .parking-main .place-calendar .calendar .icon i, .container .flow-4 .parking-main .place-calendar .calendar .icon i {
+  color: #fac80b;
+  font-size: 26px;
+}
+.calendar .icon span, .flow-5 .parking-main .place-calendar .calendar .icon span, .container .flow-4 .parking-main .place-calendar .calendar .icon span {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  color: #fac80b;
+  font-size: 9px;
+  font-weight: bold;
+}
+.calendar p, .flow-5 .parking-main .place-calendar .calendar p, .container .flow-4 .parking-main .place-calendar .calendar p {
+  color: #fac80b;
+  font-size: 10px;
+  margin: 0;
+}
+
+.flow-5 .parking-main, .container .flow-4 .parking-main {
+  width: 80%;
+  margin-inline: auto !important;
+  height: 84vh;
+}
+.flow-5 .parking-main .place-calendar, .container .flow-4 .parking-main .place-calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.flow-5 .parking-main .confirm-detail, .container .flow-4 .parking-main .confirm-detail {
+  width: 100%;
+  background-color: #37416e;
+  padding: 0.8rem;
+  margin: 15px 20px 0 -12px;
+  border-radius: 15px;
+}
+.flow-5 .parking-main .confirm-detail .form-top, .container .flow-4 .parking-main .confirm-detail .form-top {
+  width: 90%;
+  padding: 0.5rem;
+}
+.flow-5 .parking-main .confirm-detail .form-top .form-detail, .container .flow-4 .parking-main .confirm-detail .form-top .form-detail {
+  padding-bottom: 8px;
+}
+.flow-5 .parking-main .confirm-detail .form-top .form-detail h5, .container .flow-4 .parking-main .confirm-detail .form-top .form-detail h5 {
+  font-size: 16px;
+  color: #92a1d3;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.flow-5 .parking-main .confirm-detail .form-top .form-detail p, .container .flow-4 .parking-main .confirm-detail .form-top .form-detail p {
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+.flow-5 .parking-main .confirm-detail .form-top .form-tell-mail, .container .flow-4 .parking-main .confirm-detail .form-top .form-tell-mail, .flow-5 .parking-main .confirm-detail .form-top .form-type-no, .container .flow-4 .parking-main .confirm-detail .form-top .form-type-no {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon, .container .flow-4 .parking-main .confirm-detail .form-dwon {
+  width: 90%;
+  padding: 0.5rem;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon .rent-pay, .container .flow-4 .parking-main .confirm-detail .form-dwon .rent-pay {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fac80b;
+  padding-bottom: 2px;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon .rent-pay p, .container .flow-4 .parking-main .confirm-detail .form-dwon .rent-pay p {
+  margin: 0 !important;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon .rent-time, .container .flow-4 .parking-main .confirm-detail .form-dwon .rent-time {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 0.4fr;
+  align-items: center;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon .rent-time p, .container .flow-4 .parking-main .confirm-detail .form-dwon .rent-time p {
+  margin: 0 !important;
+  font-size: 17px;
+  font-weight: bolder;
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon .rent-time p p, .container .flow-4 .parking-main .confirm-detail .form-dwon .rent-time p p {
+  margin: 0 !important;
+}
+.flow-5 .parking-main .confirm-detail .form-dwon .rent-time span, .container .flow-4 .parking-main .confirm-detail .form-dwon .rent-time span {
+  color: #fac80b;
+  padding: 0rem 1.5rem 0.7rem 1.5rem;
+}
+.flow-5 .form-sms, .container .flow-4 .form-sms {
+  padding: 0.5rem 0;
+}
+.flow-5 .form-sms p, .container .flow-4 .form-sms p {
+  font-size: 15px;
+  color: #ffffff;
+}
+.flow-5 .form-sms p span, .container .flow-4 .form-sms p span {
+  color: #fac80b;
+}
+.flow-5 .form-agree, .container .flow-4 .form-agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 13%;
+}
+.flow-5 .form-agree i, .container .flow-4 .form-agree i {
+  font-size: 20px;
+  color: #ffffff;
+}
+.flow-5 .form-agree p, .container .flow-4 .form-agree p {
+  color: #ffffff;
+}
+.flow-5 .form-agree p a, .container .flow-4 .form-agree p a {
+  color: #fac80b;
+  text-transform: uppercase;
+}
+
+.button-next {
+  width: 80%;
+  background-color: #fac80b;
+  padding: 10px 0;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 7vh;
+  left: 37px;
+}
+.button-next a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #232636;
 }
 
 .car-box-yellow, .flow-1 .parking-main .quota .quota-box .car-box-yellow, .flow-1 .parking-main .quota .quota-box .mtsc-box .car-box-red, .flow-3 .parking-main .car-box-yellow {
@@ -490,7 +800,7 @@ footer p, .footer p {
   width: 50px;
 }
 .car-box-yellow .left .left-top p, .flow-1 .parking-main .quota .quota-box .car-box-yellow .left .left-top p, .flow-1 .parking-main .quota .quota-box .mtsc-box .car-box-red .left .left-top p {
-  color: rgb(35, 38, 54);
+  color: #232636;
   font-size: 14px;
   font-weight: bolder;
 }
@@ -551,7 +861,7 @@ body {
 .container .parking-body {
   width: 400px;
   height: 100vh;
-  background-color: rgb(35, 38, 54);
+  background-color: #232636;
   margin: auto;
   position: relative;
 }
