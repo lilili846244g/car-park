@@ -1,0 +1,36 @@
+@use "color.scss" as c;
+@mixin text-p {
+  margin: 0 !important;
+  font-size: 17px;
+  font-weight: bolder;
+  color: c.$textcolor;
+  padding-bottom: 10px;
+  p {
+    margin: 0 !important;
+  }
+}
+
+@mixin text-yellow-p {
+  font-size: 14px;
+  font-weight: bold;
+  color: c.$yellow;
+  padding-bottom: 2px;
+  p {
+    margin: 0 !important;
+  }
+}
+
+@mixin button-next {
+  width: 80%;
+  background-color: c.$yellow;
+  padding: 10px 0;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 7vh;
+  left: 37px;
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
