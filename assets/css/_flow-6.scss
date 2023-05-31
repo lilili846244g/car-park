@@ -1,0 +1,95 @@
+@use "color.scss" as c;
+@import "_place.scss";
+@import "mixin.scss";
+.flow-6 {
+  .parking-main {
+    width: 80%;
+    margin-inline: auto !important;
+    height: 84vh;
+    .place {
+      @extend .place;
+      span {
+        color: c.$yellow;
+      }
+    }
+    form {
+      width: 100%;
+      margin-top: 10px;
+      .text-p {
+        @include text-p;
+      }
+      .form {
+        width: 100%;
+        div {
+          width: 100%;
+          input {
+            font-size: 16px;
+            border-radius: 15px;
+            width: 87%;
+            background: #fff;
+            color: rgb(134, 133, 133);
+            padding: 0.8rem 0rem 0.8rem 2rem;
+            margin-bottom: 10px;
+            &:hover {
+              border: 2px solid c.$yellow;
+            }
+          }
+        }
+        .verf-code {
+          position: relative;
+          .verf-code-smbox {
+            width: 66px;
+            height: 23px;
+            position: absolute;
+            top: 4px;
+            right: 11px;
+            border-radius: 12px;
+            background-color: rgb(35, 38, 54);
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              color: c.$yellow;
+              margin: 0;
+            }
+          }
+        }
+        .error-tell {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0.5rem;
+          gap: 10px;
+          i {
+            font-size: 14px;
+            color: c.$yellow;
+          }
+          span {
+            font-size: 13px;
+            color: c.$yellow;
+          }
+        }
+      }
+    }
+  }
+  .button-next {
+    @include button-next;
+    bottom: 13vh;
+  }
+  .hours-48 {
+    width: 100%;
+    position: absolute;
+    bottom: 7vh;
+    a {
+      font-size: 20px;
+      color: c.$textcolor;
+      font-weight: 400;
+    }
+    i {
+      font-size: 20px;
+      color: #fff;
+      padding: 5px 5px 0 5px;
+    }
+  }
+}
