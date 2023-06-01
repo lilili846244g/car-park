@@ -30,7 +30,7 @@
             }
             div {
                 margin-top: 10px;
-                select {
+                .select__field {
                     width: 100%;
                     background-color: c.$wbkg;
                     padding: 1rem;
@@ -38,6 +38,21 @@
                     font-size: 16px;
                     font-weight: bold;
                     color: c.$lighttext;
+                    position: relative;
+                    -moz-appearance: none;
+                    appearance: none;
+                    &::after {
+                        content: "▼";
+                        padding: 12px 8px;
+                        position: absolute;
+                        right: 10px;
+                        top: 0;
+                        z-index: 1;
+                        text-align: center;
+                        width: 10%;
+                        height: 100%;
+                        pointer-events: none;
+                    }
                     option {
                         width: 100%;
                         background-color: c.$wbkg;
