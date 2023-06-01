@@ -5,7 +5,7 @@ toggleButton.addEventListener('click', () => {
 
   gsap.to(".big-logo", 0.5,{
         y:"-10vh",
-       width:"64%",
+       width:"60%",
        ease: 'easeOutExpo'
        
     })
