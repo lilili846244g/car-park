@@ -1,0 +1,111 @@
+@use "color.scss" as c;
+@import "mixin.scss";
+.flow-10 {
+    .parking-main {
+        width: 80%;
+        margin-inline: auto !important;
+        height: 84vh;
+        .h3 {
+            h3 {
+                font-size: 26px;
+                color: c.$textcolor;
+                margin: 0;
+                padding-bottom: 2px;
+            }
+        }
+        .car-park {
+            p {
+                color: c.$textcolor;
+                font-size: 17px;
+            }
+            .car-park-top {
+                margin-top: 10px;
+                background-color: #37416e;
+                border-radius: 15px;
+                display: grid;
+                grid-template-columns: 1.3fr 0.7fr;
+                padding-bottom: 10px;
+                .car-park-left {
+                    .car-park-left-top {
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem;
+                        i {
+                            color: c.$yellow;
+                            font-size: 24px;
+                        }
+                        p {
+                            color: c.$textcolor;
+                            font-size: 15px;
+                            font-weight: 600;
+                            padding-left: 5px;
+                            margin: 0;
+                        }
+                    }
+                    .car-park-left-down {
+                        display: flex;
+                        align-items: center;
+                        padding: 0 1rem;
+                        i {
+                            color: c.$yellow;
+                            font-size: 24px;
+                        }
+                        p {
+                            color: c.$textcolor;
+                            font-size: 15px;
+                            font-weight: 600;
+                            padding-left: 5px;
+                            margin: 0;
+                        }
+                    }
+                }
+                .car-park-right {
+                    .car-park-right-top {
+                        p {
+                            color: c.$textcolor;
+                        }
+                    }
+                    .car-park-right-down {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        p {
+                            color: c.$textcolor;
+                            font-size: 30px;
+                            margin: 0;
+                            font-weight: bold;
+                        }
+                        i {
+                            color: c.$yellow;
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+            div {
+                p {
+                    color: c.$textcolor;
+                    font-size: 14px;
+                    span {
+                        color: c.$yellow;
+                    }
+                }
+            }
+        }
+    }
+    .hours-48 {
+        width: 100%;
+        position: absolute;
+        bottom: 7vh;
+        a {
+            font-size: 18px;
+            color: c.$textcolor;
+            font-weight: 400;
+        }
+        i {
+            font-size: 20px;
+            color: #fff;
+            padding: 5px 5px 0 5px;
+        }
+    }
+}
