@@ -11,6 +11,7 @@
 @import "flow-6.scss";
 @import "flow-9.scss";
 @import "flow-10.scss";
+@import "flow-11.scss";
 @import "flow-12.scss";
 @import "carbox-yellow.scss";
 
@@ -76,6 +77,12 @@ body {
     }
     .flow-10 {
         @extend .flow-10;
+        header {
+            @extend .headerLogo-button;
+        }
+    }
+    .flow-11 {
+        @extend .flow-11;
         header {
             @extend .headerLogo-button;
         }

@@ -1,0 +1,81 @@
+@use "color.scss" as c;
+@import "mixin.scss";
+.flow-11 {
+    .parking-main {
+        width: 80%;
+        margin-inline: auto !important;
+        height: 84vh;
+        .h1 {
+            h1 {
+                font-size: 44px;
+                color: c.$textcolor;
+                margin: 0;
+                padding-bottom: 10px;
+            }
+            p {
+                color: c.$textcolor;
+                font-size: 18px;
+            }
+        }
+        .car-place-box {
+            display: flex;
+            align-items: baseline;
+            gap: 7px;
+            background-color: #5C6583;
+            border-radius: 15px;
+            padding: 1rem;
+            i {
+                color: c.$yellow;
+                font-size: 20px;
+            }
+            div {
+                p {
+                    font-size: 16px;
+                    color: c.$textcolor;
+                    font-weight: bold;
+                    margin: 0;
+                    &:last-child {
+                        padding-top: 5px;
+                        font-size: 14px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+        .time-box {
+            width: 100%;
+            div {
+                padding-top: 5vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                span {
+                    font-size: 20px;
+                    color: c.$textcolor;
+                }
+                .number {
+                    font-size: 180px;
+                    font-weight: bolder;
+                    color: c.$yellow;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .hours-48 {
+        width: 100%;
+        position: absolute;
+        bottom: 7vh;
+        a {
+            font-size: 18px;
+            color: c.$textcolor;
+            font-weight: 400;
+        }
+        i {
+            font-size: 20px;
+            color: #fff;
+            padding: 5px 5px 0 5px;
+        }
+    }
+}
