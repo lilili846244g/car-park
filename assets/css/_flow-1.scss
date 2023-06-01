@@ -1,99 +1,102 @@
 @use "color.scss" as c;
 @import "_place.scss";
 .flow-1 {
-  .parking-main {
-    width: 100%;
-    height: 84vh;
-    .big-logo {
-      width: 60%;
-      height: 10vh;
-      margin-inline: auto;
-      img {
+    .parking-main {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
-    .choose-rent-part {
-      width: 80%;
-      margin-inline: auto;
-      .choose-title {
-        width: 100%;
-        text-align: center;
-        p {
-          font-size: 18px;
-          font-weight: bold;
-          color: c.$textcolor;
-        }
-      }
-      div {
-        margin-top: 10px;
-        select {
-          width: 100%;
-          background-color: c.$wbkg;
-          padding: 1rem;
-          border-radius: 15px;
-          font-size: 16px;
-          font-weight: bold;
-          color: c.$lighttext;
-          option {
-            width: 100%;
-            background-color: c.$wbkg;
-            padding: 1rem;
-            border-radius: 15px;
-            font-size: 16px;
-            font-weight: bold;
-            color: c.$lighttext;
-          }
-        }
-      }
-    }
-    .quota {
-      width: 80%;
-      margin-inline: auto;
-      .text-p {
-        width: 100%;
-        text-align: center;
-        p {
-          font-size: 18px;
-          font-weight: bold;
-          color: c.$textcolor;
-        }
-      }
-      .quota-box {
-        width: 100%;
-        margin-inline: auto;
-        .car-box-yellow {
-          @extend .car-box-yellow;
-        }
-        .mtsc-box {
-          margin-top: 15px;
-          .car-box-red {
-            @extend.car-box-yellow;
-            background-color: #842828 !important;
-          }
-          .left {
-            .left-top {
-              p {
-                color: c.$textcolor !important;
-              }
+        height: 84vh;
+        .big-logo {
+            width: 82%;
+            height: 20vh;
+            margin-inline: auto;
+            margin-top: 10vh;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
-            .left-down {
-              p {
-                color: c.$textcolor;
-              }
-            }
-          }
-          .right {
-            p {
-              color: c.$textcolor;
-              padding: 0 0.3rem;
-              font-weight: bold;
-              padding-bottom: 5px;
-            }
-          }
         }
-      }
+        .choose-rent-part {
+            width: 80%;
+            margin-inline: auto;
+            padding-top: 1vh;
+            .choose-title {
+                width: 100%;
+                text-align: center;
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: c.$textcolor;
+                }
+            }
+            div {
+                margin-top: 10px;
+                select {
+                    width: 100%;
+                    background-color: c.$wbkg;
+                    padding: 1rem;
+                    border-radius: 15px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: c.$lighttext;
+                    option {
+                        width: 100%;
+                        background-color: c.$wbkg;
+                        padding: 1rem;
+                        border-radius: 15px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: c.$lighttext;
+                    }
+                }
+            }
+        }
+        .quota {
+            width: 80%;
+            margin-inline: auto;
+            display: none;
+            .text-p {
+                width: 100%;
+                text-align: center;
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: c.$textcolor;
+                }
+            }
+            .quota-box {
+                width: 100%;
+                margin-inline: auto;
+                .car-box-yellow {
+                    @extend .car-box-yellow;
+                }
+                .mtsc-box {
+                    margin-top: 15px;
+                    .car-box-red {
+                        @extend.car-box-yellow;
+                        background-color: #842828 !important;
+                    }
+                    .left {
+                        .left-top {
+                            p {
+                                color: c.$textcolor !important;
+                            }
+                        }
+                        .left-down {
+                            p {
+                                color: c.$textcolor;
+                            }
+                        }
+                    }
+                    .right {
+                        p {
+                            color: c.$textcolor;
+                            padding: 0 0.3rem;
+                            font-weight: bold;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
