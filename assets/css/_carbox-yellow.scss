@@ -1,69 +1,70 @@
 @use "color.scss" as c;
 .car-box-yellow {
-  display: grid;
-  grid-template-columns: 1.5fr 0.6fr 0.3fr;
-  align-items: center;
-  background: c.$yellow;
-  border-radius: 15px;
-  .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0.5rem 1rem;
-    .left-top {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 5px;
-      img {
-        width: 50px;
-      }
-      p {
-        color: c.$maincolor;
-        font-size: 14px;
-        font-weight: bolder;
-      }
-    }
-    .left-down {
-      padding: 0.2rem;
-      p {
-        font-size: 30px;
-        font-weight: bold;
-        margin: 0;
-        span {
-          font-size: 12px;
-          font-weight: bold;
-          padding-left: 5px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.6fr 0.3fr;
+    align-items: center;
+    background: c.$yellow;
+    border-radius: 15px;
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+        .left-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            img {
+                width: 30px;
+            }
+            p {
+                color: c.$maincolor;
+                font-size: 14px;
+                font-weight: bolder;
+                padding-left: 5px;
+            }
         }
-      }
+        .left-down {
+            padding: 0.2rem;
+            p {
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0;
+                span {
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding-left: 5px;
+                }
+            }
+        }
     }
-  }
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    .right-top {
-      p {
-        font-size: 13px;
-        margin: 0;
-        padding-top: 12px;
-      }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .right-top {
+            p {
+                font-size: 13px;
+                margin: 0;
+                padding-top: 12px;
+            }
+        }
+        .right-down {
+            display: flex;
+            align-items: baseline;
+            p {
+                font-size: 60px;
+                margin: 0;
+                font-weight: bolder;
+                color: blue;
+            }
+            span {
+                padding-left: 4px;
+                font-weight: bold;
+            }
+        }
     }
-    .right-down {
-      display: flex;
-      align-items: baseline;
-      p {
-        font-size: 60px;
-        margin: 0;
-        font-weight: bolder;
-        color: blue;
-      }
-      span {
-        padding-left: 4px;
-        font-weight: bold;
-      }
-    }
-  }
 }
