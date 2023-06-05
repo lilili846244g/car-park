@@ -1,53 +1,53 @@
 @use "color.scss" as c;
 @mixin text-p {
-  margin: 0 !important;
-  font-size: 17px;
-  font-weight: bolder;
-  color: c.$textcolor;
-  padding-bottom: 10px;
-  p {
     margin: 0 !important;
-  }
+    font-size: 17px;
+    font-weight: bolder;
+    color: c.$textcolor;
+    padding-bottom: 10px;
+    p {
+        margin: 0 !important;
+    }
 }
 
 @mixin text-yellow-p {
-  font-size: 14px;
-  font-weight: bold;
-  color: c.$yellow;
-  padding-bottom: 2px;
-  p {
-    margin: 0 !important;
-  }
+    font-size: 16px;
+    font-weight: bold;
+    color: c.$yellow;
+    padding-bottom: 2px;
+    p {
+        margin: 0 !important;
+    }
 }
 
 @mixin button-next {
-  width: 80%;
-  background-color: c.$yellow;
-  padding: 10px 0;
-  border-radius: 25px;
-  position: absolute;
-  bottom: 7vh;
-  left: 37px;
-  a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-    color: c.$maincolor;
-  }
+    width: 80%;
+    background-color: c.$yellow;
+    padding: 10px 0;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 7vh;
+    left: 37px;
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: c.$maincolor;
+    }
 }
 
 @mixin form-detail {
-  padding-bottom: 8px;
-  h5 {
-    font-size: 16px;
-    color: #92a1d3;
-    padding-bottom: 1rem;
-    margin: 0;
-  }
-  p {
-    font-size: 16px;
-    color: c.$textcolor;
-    padding-bottom: 0.5rem;
-    margin: 0;
-  }
+    padding-bottom: 8px;
+    h5 {
+        font-size: 14px;
+        color: #92a1d3;
+        padding-bottom: 0.5rem;
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
+        color: c.$textcolor;
+        padding-bottom: 0.5rem;
+        margin: 0;
+    }
 }
