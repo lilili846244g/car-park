@@ -35,68 +35,80 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
-    .parking-body {
-        width: 400px;
-        height: 100vh;
-        background-color: c.$maincolor;
-        margin: auto;
-        position: relative;
+}
+
+.parking-body {
+    width: 400px;
+    height: 100vh;
+    background-color: c.$maincolor;
+    margin: auto;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.flow-1 {
+    @extend .flow-1;
+}
+
+.flow-2 {
+    header {
+        @extend .headerLogo;
     }
-    .flow-1 {
-        @extend .flow-1;
+}
+
+.flow-3 {
+    @extend .flow-3;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-2 {
-        header {
-            @extend .headerLogo;
-        }
+}
+
+.flow-4 {
+    @extend .flow-4;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-3 {
-        @extend .flow-3;
-        header {
-            @extend .headerLogo-button;
-        }
+}
+
+.flow-5 {
+    @extend .flow-5;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-4 {
-        @extend .flow-4;
-        header {
-            @extend .headerLogo-button;
-        }
+}
+
+.flow-6 {
+    @extend .flow-6;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-5 {
-        @extend .flow-5;
-        header {
-            @extend .headerLogo-button;
-        }
+}
+
+.flow-9 {
+    @extend .flow-9;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-6 {
-        @extend .flow-6;
-        header {
-            @extend .headerLogo-button;
-        }
+}
+
+.flow-10 {
+    @extend .flow-10;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-9 {
-        @extend .flow-9;
-        header {
-            @extend .headerLogo-button;
-        }
+}
+
+.flow-11 {
+    @extend .flow-11;
+    header {
+        @extend .headerLogo-button;
     }
-    .flow-10 {
-        @extend .flow-10;
-        header {
-            @extend .headerLogo-button;
-        }
-    }
-    .flow-11 {
-        @extend .flow-11;
-        header {
-            @extend .headerLogo-button;
-        }
-    }
-    .flow-12 {
-        @extend .flow-12;
-        header {
-            @extend .headerLogo-button;
-        }
+}
+
+.flow-12 {
+    @extend .flow-12;
+    header {
+        @extend .headerLogo-button;
     }
 }
 
